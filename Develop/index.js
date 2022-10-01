@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-// const { inherits } = require('util');
+const { inherits } = require('util');
 const {writeFile} = require('fs').promises;
-const {generateReadme} = require('./utils')
+const generateReadme = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 
 const init = async() => {
@@ -58,7 +58,7 @@ inquirer.prompt ( [
     
 ]);
 // // TODO: Create a function to write README file
- await writeFile('README', generateReadme(preguntas));
+ await writeFile('README.md', generateReadme(preguntas));
 console.log('File Was Created')
 }catch(e){ 
     console.log(e)

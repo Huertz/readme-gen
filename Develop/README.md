@@ -1,16 +1,18 @@
-# p
-  # <Your-Project-Title>
+# q
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
 
   Short description of the project: 
 
-  u
+  r
   
   ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
+  - [License](#license)
   - [Credits](#credits)
   - [License](#license)
   
@@ -18,28 +20,27 @@
 
   To install necessary dependencies, run the following command: 
 
-  y 
+   
 
   ## Usage
 
-  t
-  
-  ## License
+  f
 
-  This project is under the MIT License 
+  ## License
+This project is licensed under the MIT license.
 
   ## Contributing 
 
-  r
+  f
   
   ## Tests
 
   To run the code, run the follwing command:
 
-  undefined
+  npm test
 
   ## Questions
 
-  If you want to view more projects. Your are welcome to visit me at https://github.com/o
+  If you want to view more projects. Your are welcome to visit me at https://github.com/w
 
-  If you have addition question you can email me at undefined@yahoo.com 
+  If you have addition question you can email me at e@yahoo.com 

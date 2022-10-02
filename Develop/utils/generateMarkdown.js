@@ -1,21 +1,29 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  
+function renderLicenseBadge(license) {
+  if (license !== 'None')
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  return '';
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown({title, instructions, license, userName, description, usage, test, emial, contribution}) {
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  if (license !== 'None')
+    return `- [License](#license)`;
+  return '';
+}
+
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license !== 'None') 
+    return `## License\nThis project is licensed under the ${license} license.`;
+    return '';
+}
+
+function generateMarkdown({ title, instructions, license, userName, description, usage, test, email, contribution }) {
   return `# ${title}
-  # <Your-Project-Title>
+
+${renderLicenseBadge(license)}
 
   ## Description
 
@@ -27,6 +35,7 @@ function generateMarkdown({title, instructions, license, userName, description, 
   
   - [Installation](#installation)
   - [Usage](#usage)
+  ${renderLicenseLink(license)}
   - [Credits](#credits)
   - [License](#license)
   
@@ -39,10 +48,8 @@ function generateMarkdown({title, instructions, license, userName, description, 
   ## Usage
 
   ${usage}
-  
-  ## License
 
-  This project is under the ${license} 
+  ${renderLicenseSection(license)}
 
   ## Contributing 
 
@@ -58,7 +65,7 @@ function generateMarkdown({title, instructions, license, userName, description, 
 
   If you want to view more projects. Your are welcome to visit me at https://github.com/${userName}
 
-  If you have addition question you can email me at ${emial}@yahoo.com 
+  If you have addition question you can email me at ${email}@yahoo.com 
 `;
 }
 

@@ -34,7 +34,8 @@ const userPrompt = () => {
         {
             type: 'input',
             name: 'instructions',
-            message: 'Enter Instalation Instructions'
+            message: 'Enter Instalation Instructions',
+            default: 'npm install'
         },
 
         {
@@ -44,10 +45,17 @@ const userPrompt = () => {
         },
 
         {
+            type: 'input',
+            name: 'test',
+            message: 'Enter test', 
+            default: 'npm test'
+        },
+
+        {
             type: 'list',
             name: 'license',
             message: 'Choose Type Of License',
-            choices: ['MIT License', 'Mozila License',]
+            choices: ['MIT', 'APACHE2.0', 'GPL3.0', 'BSD3', 'None']
         },
 
         {

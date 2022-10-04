@@ -1,4 +1,4 @@
-# q
+# readme.md 
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -6,7 +6,7 @@
 
   Short description of the project: 
 
-  r
+  node.js
   
   ## Table of Contents
   
@@ -20,18 +20,18 @@
 
   To install necessary dependencies, run the following command: 
 
-   
+  npm install 
 
   ## Usage
 
-  f
+  command line
 
   ## License
 This project is licensed under the MIT license.
 
   ## Contributing 
 
-  f
+  Alfredo
   
   ## Tests
 
@@ -41,6 +41,6 @@ This project is licensed under the MIT license.
 
   ## Questions
 
-  If you want to view more projects. Your are welcome to visit me at https://github.com/w
+  If you want to view more projects. Your are welcome to visit me at https://github.com/Huertz
 
-  If you have addition question you can email me at e@yahoo.com 
+  If you have addition question you can email me at alfredo_huerta95@yahoo.com 
